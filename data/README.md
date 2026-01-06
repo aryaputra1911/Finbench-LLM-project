@@ -21,3 +21,14 @@ To facilitate efficient batch processing and token management for Large Language
     "page": "integer"
   }
 }
+
+**Dataset citation**
+i used this dataset for my finbench LLMs Project
+@misc{islam2023financebench,
+      title={FinanceBench: A New Benchmark for Financial Question Answering}, 
+      author={Pranab Islam and Anand Kannappan and Douwe Kiela and Rebecca Qian and Nino Scherrer and Bertie Vidgen},
+      year={2023},
+      eprint={2311.11944},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
