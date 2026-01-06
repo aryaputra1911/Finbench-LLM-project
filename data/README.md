@@ -28,8 +28,9 @@ To facilitate efficient batch processing and token management for Large Language
     "page": "integer"
   }
 }
-
-**Dataset Citation**
+```
+## Dataset Citation
+```
 This project utilizes the FinanceBench dataset for benchmarking financial Question Answering capabilities:
 @misc{islam2023financebench,
       title={FinanceBench: A New Benchmark for Financial Question Answering}, 
