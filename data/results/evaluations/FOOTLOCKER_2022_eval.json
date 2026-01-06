@@ -1,0 +1,56 @@
+{
+    "entity": "FOOTLOCKER",
+    "period": "2022",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 0.0,
+                "source": null
+            },
+            "net_income": {
+                "value": 0.0,
+                "source": null
+            },
+            "assets": {
+                "value": 0.0,
+                "source": null
+            },
+            "liabilities": {
+                "value": 0.0,
+                "source": null
+            }
+        },
+        "inferred": {},
+        "accounting_proof": {
+            "equity_deduced": 0.0,
+            "identity_verified": false
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.0,
+        "sanity_score": 0.8,
+        "data_integrity": "PASSED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": false,
+        "reasoning_mode": "investigative",
+        "known_unknowns": [
+            "revenue",
+            "net_income",
+            "assets",
+            "liabilities"
+        ],
+        "caution_note": null
+    },
+    "metadata": {
+        "unit": "units",
+        "currency": "Unknown",
+        "files": [
+            "FOOTLOCKER_2022_8K_dated-2022-05-20_3.csv",
+            "FOOTLOCKER_2022_8K_dated-2022-05-20_5.csv",
+            "FOOTLOCKER_2022_8K_dated-2022-05-20_7.csv",
+            "FOOTLOCKER_2022_8K_dated-2022-05-20_9.csv"
+        ]
+    }
+}

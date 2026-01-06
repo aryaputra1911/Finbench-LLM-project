@@ -1,0 +1,106 @@
+{
+    "entity": "COSTCO",
+    "period": "2021",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 192052.0,
+                "source": "COSTCO_2021_10K_91.csv",
+                "ts": "2026-01-06T19:36:19.813649"
+            },
+            "net_income": {
+                "value": 5007.0,
+                "source": "COSTCO_2021_10K_87.csv",
+                "ts": "2026-01-06T19:36:19.798878"
+            },
+            "assets": {
+                "value": 59268.0,
+                "source": "COSTCO_2021_10K_37.csv",
+                "ts": "2026-01-06T19:36:19.707509"
+            },
+            "liabilities": {
+                "value": 41190.0,
+                "source": "COSTCO_2021_10K_37.csv",
+                "ts": "2026-01-06T19:36:19.707509"
+            }
+        },
+        "inferred": {
+            "net_margin": {
+                "value": 0.0261,
+                "method": "deduced_from_observed",
+                "formula": "net_income / revenue"
+            }
+        },
+        "accounting_proof": {
+            "equity_deduced": 18078.0,
+            "identity_verified": true
+        }
+    },
+    "epistemic_status": {
+        "completeness": 1.0,
+        "sanity_score": 0.8,
+        "data_integrity": "PASSED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": true,
+        "reasoning_mode": "deductive",
+        "known_unknowns": [],
+        "caution_note": null
+    },
+    "metadata": {
+        "unit": "units",
+        "currency": "Unknown",
+        "files": [
+            "COSTCO_2021_10K_1.csv",
+            "COSTCO_2021_10K_11.csv",
+            "COSTCO_2021_10K_13.csv",
+            "COSTCO_2021_10K_15.csv",
+            "COSTCO_2021_10K_17.csv",
+            "COSTCO_2021_10K_19.csv",
+            "COSTCO_2021_10K_21.csv",
+            "COSTCO_2021_10K_23.csv",
+            "COSTCO_2021_10K_25.csv",
+            "COSTCO_2021_10K_27.csv",
+            "COSTCO_2021_10K_29.csv",
+            "COSTCO_2021_10K_3.csv",
+            "COSTCO_2021_10K_31.csv",
+            "COSTCO_2021_10K_33.csv",
+            "COSTCO_2021_10K_35.csv",
+            "COSTCO_2021_10K_37.csv",
+            "COSTCO_2021_10K_39.csv",
+            "COSTCO_2021_10K_41.csv",
+            "COSTCO_2021_10K_43.csv",
+            "COSTCO_2021_10K_45.csv",
+            "COSTCO_2021_10K_47.csv",
+            "COSTCO_2021_10K_49.csv",
+            "COSTCO_2021_10K_5.csv",
+            "COSTCO_2021_10K_51.csv",
+            "COSTCO_2021_10K_53.csv",
+            "COSTCO_2021_10K_55.csv",
+            "COSTCO_2021_10K_57.csv",
+            "COSTCO_2021_10K_59.csv",
+            "COSTCO_2021_10K_61.csv",
+            "COSTCO_2021_10K_63.csv",
+            "COSTCO_2021_10K_65.csv",
+            "COSTCO_2021_10K_67.csv",
+            "COSTCO_2021_10K_69.csv",
+            "COSTCO_2021_10K_7.csv",
+            "COSTCO_2021_10K_71.csv",
+            "COSTCO_2021_10K_73.csv",
+            "COSTCO_2021_10K_75.csv",
+            "COSTCO_2021_10K_77.csv",
+            "COSTCO_2021_10K_79.csv",
+            "COSTCO_2021_10K_81.csv",
+            "COSTCO_2021_10K_83.csv",
+            "COSTCO_2021_10K_85.csv",
+            "COSTCO_2021_10K_87.csv",
+            "COSTCO_2021_10K_89.csv",
+            "COSTCO_2021_10K_9.csv",
+            "COSTCO_2021_10K_91.csv",
+            "COSTCO_2021_10K_93.csv",
+            "COSTCO_2021_10K_95.csv",
+            "COSTCO_2021_10K_97.csv"
+        ]
+    }
+}

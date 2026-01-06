@@ -1,0 +1,121 @@
+{
+    "entity": "NIKE",
+    "period": "2019",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 5254.0,
+                "source": "NIKE_2019_10K_41.csv",
+                "ts": "2026-01-06T19:36:17.496534"
+            },
+            "net_income": {
+                "value": 4029.0,
+                "source": "NIKE_2019_10K_59.csv",
+                "ts": "2026-01-06T19:36:17.532255"
+            },
+            "assets": {
+                "value": 23717.0,
+                "source": "NIKE_2019_10K_65.csv",
+                "ts": "2026-01-06T19:36:17.540117"
+            },
+            "liabilities": {
+                "value": 0.0,
+                "source": null
+            }
+        },
+        "inferred": {
+            "net_margin": {
+                "value": 0.7668,
+                "method": "deduced_from_observed",
+                "formula": "net_income / revenue"
+            }
+        },
+        "accounting_proof": {
+            "equity_deduced": 23717.0,
+            "identity_verified": false
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.75,
+        "sanity_score": 0.4,
+        "data_integrity": "FAILED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": false,
+        "reasoning_mode": "investigative",
+        "known_unknowns": [
+            "liabilities"
+        ],
+        "caution_note": "Identity failure detected"
+    },
+    "metadata": {
+        "unit": "millions",
+        "currency": "Unknown",
+        "files": [
+            "NIKE_2019_10K_101.csv",
+            "NIKE_2019_10K_103.csv",
+            "NIKE_2019_10K_105.csv",
+            "NIKE_2019_10K_107.csv",
+            "NIKE_2019_10K_109.csv",
+            "NIKE_2019_10K_111.csv",
+            "NIKE_2019_10K_113.csv",
+            "NIKE_2019_10K_115.csv",
+            "NIKE_2019_10K_117.csv",
+            "NIKE_2019_10K_119.csv",
+            "NIKE_2019_10K_121.csv",
+            "NIKE_2019_10K_125.csv",
+            "NIKE_2019_10K_127.csv",
+            "NIKE_2019_10K_129.csv",
+            "NIKE_2019_10K_13.csv",
+            "NIKE_2019_10K_131.csv",
+            "NIKE_2019_10K_133.csv",
+            "NIKE_2019_10K_135.csv",
+            "NIKE_2019_10K_15.csv",
+            "NIKE_2019_10K_17.csv",
+            "NIKE_2019_10K_21.csv",
+            "NIKE_2019_10K_23.csv",
+            "NIKE_2019_10K_25.csv",
+            "NIKE_2019_10K_27.csv",
+            "NIKE_2019_10K_29.csv",
+            "NIKE_2019_10K_3.csv",
+            "NIKE_2019_10K_31.csv",
+            "NIKE_2019_10K_33.csv",
+            "NIKE_2019_10K_35.csv",
+            "NIKE_2019_10K_37.csv",
+            "NIKE_2019_10K_39.csv",
+            "NIKE_2019_10K_41.csv",
+            "NIKE_2019_10K_43.csv",
+            "NIKE_2019_10K_45.csv",
+            "NIKE_2019_10K_47.csv",
+            "NIKE_2019_10K_49.csv",
+            "NIKE_2019_10K_5.csv",
+            "NIKE_2019_10K_51.csv",
+            "NIKE_2019_10K_53.csv",
+            "NIKE_2019_10K_55.csv",
+            "NIKE_2019_10K_57.csv",
+            "NIKE_2019_10K_59.csv",
+            "NIKE_2019_10K_61.csv",
+            "NIKE_2019_10K_63.csv",
+            "NIKE_2019_10K_65.csv",
+            "NIKE_2019_10K_67.csv",
+            "NIKE_2019_10K_69.csv",
+            "NIKE_2019_10K_7.csv",
+            "NIKE_2019_10K_71.csv",
+            "NIKE_2019_10K_73.csv",
+            "NIKE_2019_10K_75.csv",
+            "NIKE_2019_10K_77.csv",
+            "NIKE_2019_10K_79.csv",
+            "NIKE_2019_10K_81.csv",
+            "NIKE_2019_10K_83.csv",
+            "NIKE_2019_10K_85.csv",
+            "NIKE_2019_10K_87.csv",
+            "NIKE_2019_10K_89.csv",
+            "NIKE_2019_10K_91.csv",
+            "NIKE_2019_10K_93.csv",
+            "NIKE_2019_10K_95.csv",
+            "NIKE_2019_10K_97.csv",
+            "NIKE_2019_10K_99.csv"
+        ]
+    }
+}

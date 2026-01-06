@@ -1,0 +1,126 @@
+{
+    "entity": "BESTBUY",
+    "period": "2023",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 46298.0,
+                "source": "BESTBUY_2023_10K_131.csv",
+                "ts": "2026-01-06T19:36:18.258512"
+            },
+            "net_income": {
+                "value": 1419.0,
+                "source": "BESTBUY_2023_10K_51.csv",
+                "ts": "2026-01-06T19:36:18.351748"
+            },
+            "assets": {
+                "value": 15803.0,
+                "source": "BESTBUY_2023_10K_45.csv",
+                "ts": "2026-01-06T19:36:18.333323"
+            },
+            "liabilities": {
+                "value": 0.0,
+                "source": null
+            }
+        },
+        "inferred": {
+            "net_margin": {
+                "value": 0.0306,
+                "method": "deduced_from_observed",
+                "formula": "net_income / revenue"
+            }
+        },
+        "accounting_proof": {
+            "equity_deduced": 15803.0,
+            "identity_verified": false
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.75,
+        "sanity_score": 0.4,
+        "data_integrity": "FAILED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": false,
+        "reasoning_mode": "investigative",
+        "known_unknowns": [
+            "liabilities"
+        ],
+        "caution_note": "Identity failure detected"
+    },
+    "metadata": {
+        "unit": "units",
+        "currency": "Unknown",
+        "files": [
+            "BESTBUY_2023_10K_1.csv",
+            "BESTBUY_2023_10K_101.csv",
+            "BESTBUY_2023_10K_103.csv",
+            "BESTBUY_2023_10K_105.csv",
+            "BESTBUY_2023_10K_107.csv",
+            "BESTBUY_2023_10K_11.csv",
+            "BESTBUY_2023_10K_111.csv",
+            "BESTBUY_2023_10K_113.csv",
+            "BESTBUY_2023_10K_115.csv",
+            "BESTBUY_2023_10K_117.csv",
+            "BESTBUY_2023_10K_119.csv",
+            "BESTBUY_2023_10K_121.csv",
+            "BESTBUY_2023_10K_123.csv",
+            "BESTBUY_2023_10K_125.csv",
+            "BESTBUY_2023_10K_127.csv",
+            "BESTBUY_2023_10K_129.csv",
+            "BESTBUY_2023_10K_13.csv",
+            "BESTBUY_2023_10K_131.csv",
+            "BESTBUY_2023_10K_133.csv",
+            "BESTBUY_2023_10K_135.csv",
+            "BESTBUY_2023_10K_137.csv",
+            "BESTBUY_2023_10K_139.csv",
+            "BESTBUY_2023_10K_141.csv",
+            "BESTBUY_2023_10K_15.csv",
+            "BESTBUY_2023_10K_17.csv",
+            "BESTBUY_2023_10K_19.csv",
+            "BESTBUY_2023_10K_21.csv",
+            "BESTBUY_2023_10K_23.csv",
+            "BESTBUY_2023_10K_25.csv",
+            "BESTBUY_2023_10K_27.csv",
+            "BESTBUY_2023_10K_29.csv",
+            "BESTBUY_2023_10K_3.csv",
+            "BESTBUY_2023_10K_31.csv",
+            "BESTBUY_2023_10K_33.csv",
+            "BESTBUY_2023_10K_35.csv",
+            "BESTBUY_2023_10K_39.csv",
+            "BESTBUY_2023_10K_41.csv",
+            "BESTBUY_2023_10K_43.csv",
+            "BESTBUY_2023_10K_45.csv",
+            "BESTBUY_2023_10K_47.csv",
+            "BESTBUY_2023_10K_49.csv",
+            "BESTBUY_2023_10K_5.csv",
+            "BESTBUY_2023_10K_51.csv",
+            "BESTBUY_2023_10K_53.csv",
+            "BESTBUY_2023_10K_55.csv",
+            "BESTBUY_2023_10K_59.csv",
+            "BESTBUY_2023_10K_61.csv",
+            "BESTBUY_2023_10K_63.csv",
+            "BESTBUY_2023_10K_65.csv",
+            "BESTBUY_2023_10K_67.csv",
+            "BESTBUY_2023_10K_69.csv",
+            "BESTBUY_2023_10K_7.csv",
+            "BESTBUY_2023_10K_71.csv",
+            "BESTBUY_2023_10K_73.csv",
+            "BESTBUY_2023_10K_75.csv",
+            "BESTBUY_2023_10K_77.csv",
+            "BESTBUY_2023_10K_79.csv",
+            "BESTBUY_2023_10K_81.csv",
+            "BESTBUY_2023_10K_83.csv",
+            "BESTBUY_2023_10K_85.csv",
+            "BESTBUY_2023_10K_87.csv",
+            "BESTBUY_2023_10K_89.csv",
+            "BESTBUY_2023_10K_9.csv",
+            "BESTBUY_2023_10K_91.csv",
+            "BESTBUY_2023_10K_93.csv",
+            "BESTBUY_2023_10K_95.csv",
+            "BESTBUY_2023_10K_97.csv",
+            "BESTBUY_2023_10K_99.csv"
+        ]
+    }
+}

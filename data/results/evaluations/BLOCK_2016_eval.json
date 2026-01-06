@@ -1,0 +1,126 @@
+{
+    "entity": "BLOCK",
+    "period": "2016",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 0.0,
+                "source": null
+            },
+            "net_income": {
+                "value": 20766.0,
+                "source": "BLOCK_2016_10K_63.csv",
+                "ts": "2026-01-06T19:36:05.800521"
+            },
+            "assets": {
+                "value": 1211362.0,
+                "source": "BLOCK_2016_10K_75.csv",
+                "ts": "2026-01-06T19:36:05.816992"
+            },
+            "liabilities": {
+                "value": 635209.0,
+                "source": "BLOCK_2016_10K_75.csv",
+                "ts": "2026-01-06T19:36:05.822018"
+            }
+        },
+        "inferred": {},
+        "accounting_proof": {
+            "equity_deduced": 576153.0,
+            "identity_verified": true
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.75,
+        "sanity_score": 1.0,
+        "data_integrity": "PASSED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": true,
+        "reasoning_mode": "deductive",
+        "known_unknowns": [
+            "revenue"
+        ],
+        "caution_note": null
+    },
+    "metadata": {
+        "unit": "units",
+        "currency": "USD",
+        "files": [
+            "BLOCK_2016_10K_101.csv",
+            "BLOCK_2016_10K_103.csv",
+            "BLOCK_2016_10K_105.csv",
+            "BLOCK_2016_10K_107.csv",
+            "BLOCK_2016_10K_109.csv",
+            "BLOCK_2016_10K_11.csv",
+            "BLOCK_2016_10K_111.csv",
+            "BLOCK_2016_10K_113.csv",
+            "BLOCK_2016_10K_115.csv",
+            "BLOCK_2016_10K_117.csv",
+            "BLOCK_2016_10K_119.csv",
+            "BLOCK_2016_10K_121.csv",
+            "BLOCK_2016_10K_123.csv",
+            "BLOCK_2016_10K_125.csv",
+            "BLOCK_2016_10K_127.csv",
+            "BLOCK_2016_10K_129.csv",
+            "BLOCK_2016_10K_131.csv",
+            "BLOCK_2016_10K_133.csv",
+            "BLOCK_2016_10K_135.csv",
+            "BLOCK_2016_10K_137.csv",
+            "BLOCK_2016_10K_139.csv",
+            "BLOCK_2016_10K_141.csv",
+            "BLOCK_2016_10K_143.csv",
+            "BLOCK_2016_10K_145.csv",
+            "BLOCK_2016_10K_147.csv",
+            "BLOCK_2016_10K_149.csv",
+            "BLOCK_2016_10K_15.csv",
+            "BLOCK_2016_10K_151.csv",
+            "BLOCK_2016_10K_153.csv",
+            "BLOCK_2016_10K_155.csv",
+            "BLOCK_2016_10K_157.csv",
+            "BLOCK_2016_10K_17.csv",
+            "BLOCK_2016_10K_19.csv",
+            "BLOCK_2016_10K_21.csv",
+            "BLOCK_2016_10K_23.csv",
+            "BLOCK_2016_10K_25.csv",
+            "BLOCK_2016_10K_27.csv",
+            "BLOCK_2016_10K_29.csv",
+            "BLOCK_2016_10K_3.csv",
+            "BLOCK_2016_10K_31.csv",
+            "BLOCK_2016_10K_33.csv",
+            "BLOCK_2016_10K_35.csv",
+            "BLOCK_2016_10K_37.csv",
+            "BLOCK_2016_10K_39.csv",
+            "BLOCK_2016_10K_41.csv",
+            "BLOCK_2016_10K_43.csv",
+            "BLOCK_2016_10K_45.csv",
+            "BLOCK_2016_10K_47.csv",
+            "BLOCK_2016_10K_49.csv",
+            "BLOCK_2016_10K_5.csv",
+            "BLOCK_2016_10K_51.csv",
+            "BLOCK_2016_10K_53.csv",
+            "BLOCK_2016_10K_55.csv",
+            "BLOCK_2016_10K_57.csv",
+            "BLOCK_2016_10K_59.csv",
+            "BLOCK_2016_10K_61.csv",
+            "BLOCK_2016_10K_63.csv",
+            "BLOCK_2016_10K_65.csv",
+            "BLOCK_2016_10K_67.csv",
+            "BLOCK_2016_10K_7.csv",
+            "BLOCK_2016_10K_71.csv",
+            "BLOCK_2016_10K_75.csv",
+            "BLOCK_2016_10K_79.csv",
+            "BLOCK_2016_10K_81.csv",
+            "BLOCK_2016_10K_83.csv",
+            "BLOCK_2016_10K_85.csv",
+            "BLOCK_2016_10K_87.csv",
+            "BLOCK_2016_10K_89.csv",
+            "BLOCK_2016_10K_9.csv",
+            "BLOCK_2016_10K_91.csv",
+            "BLOCK_2016_10K_93.csv",
+            "BLOCK_2016_10K_95.csv",
+            "BLOCK_2016_10K_97.csv",
+            "BLOCK_2016_10K_99.csv"
+        ]
+    }
+}

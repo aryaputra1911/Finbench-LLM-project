@@ -1,0 +1,68 @@
+{
+    "entity": "ULTABEAUTY",
+    "period": "2023Q4",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 3226773.0,
+                "source": "ULTABEAUTY_2023Q4_EARNINGS_5.csv",
+                "ts": "2026-01-06T19:36:22.122987"
+            },
+            "net_income": {
+                "value": 340751.0,
+                "source": "ULTABEAUTY_2023Q4_EARNINGS_5.csv",
+                "ts": "2026-01-06T19:36:22.125004"
+            },
+            "assets": {
+                "value": 0.0,
+                "source": null
+            },
+            "liabilities": {
+                "value": 3410600.0,
+                "source": "ULTABEAUTY_2023Q4_EARNINGS_9.csv",
+                "ts": "2026-01-06T19:36:22.139518"
+            }
+        },
+        "inferred": {
+            "net_margin": {
+                "value": 0.1056,
+                "method": "deduced_from_observed",
+                "formula": "net_income / revenue"
+            }
+        },
+        "accounting_proof": {
+            "equity_deduced": -3410600.0,
+            "identity_verified": false
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.75,
+        "sanity_score": 1.0,
+        "data_integrity": "PASSED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": true,
+        "reasoning_mode": "investigative",
+        "known_unknowns": [
+            "assets"
+        ],
+        "caution_note": null
+    },
+    "metadata": {
+        "unit": "millions",
+        "currency": "USD",
+        "files": [
+            "ULTABEAUTY_2023Q4_EARNINGS_1.csv",
+            "ULTABEAUTY_2023Q4_EARNINGS_11.csv",
+            "ULTABEAUTY_2023Q4_EARNINGS_13.csv",
+            "ULTABEAUTY_2023Q4_EARNINGS_15.csv",
+            "ULTABEAUTY_2023Q4_EARNINGS_17.csv",
+            "ULTABEAUTY_2023Q4_EARNINGS_19.csv",
+            "ULTABEAUTY_2023Q4_EARNINGS_3.csv",
+            "ULTABEAUTY_2023Q4_EARNINGS_5.csv",
+            "ULTABEAUTY_2023Q4_EARNINGS_7.csv",
+            "ULTABEAUTY_2023Q4_EARNINGS_9.csv"
+        ]
+    }
+}

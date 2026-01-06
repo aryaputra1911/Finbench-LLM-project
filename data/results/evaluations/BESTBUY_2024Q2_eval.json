@@ -1,0 +1,91 @@
+{
+    "entity": "BESTBUY",
+    "period": "2024Q2",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 0.0,
+                "source": null
+            },
+            "net_income": {
+                "value": 0.0,
+                "source": null
+            },
+            "assets": {
+                "value": 0.0,
+                "source": null
+            },
+            "liabilities": {
+                "value": 0.0,
+                "source": null
+            }
+        },
+        "inferred": {},
+        "accounting_proof": {
+            "equity_deduced": 0.0,
+            "identity_verified": false
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.0,
+        "sanity_score": 0.8,
+        "data_integrity": "PASSED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": false,
+        "reasoning_mode": "investigative",
+        "known_unknowns": [
+            "revenue",
+            "net_income",
+            "assets",
+            "liabilities"
+        ],
+        "caution_note": null
+    },
+    "metadata": {
+        "unit": "units",
+        "currency": "Unknown",
+        "files": [
+            "BESTBUY_2024Q2_10Q_1.csv",
+            "BESTBUY_2024Q2_10Q_11.csv",
+            "BESTBUY_2024Q2_10Q_13.csv",
+            "BESTBUY_2024Q2_10Q_15.csv",
+            "BESTBUY_2024Q2_10Q_17.csv",
+            "BESTBUY_2024Q2_10Q_19.csv",
+            "BESTBUY_2024Q2_10Q_21.csv",
+            "BESTBUY_2024Q2_10Q_23.csv",
+            "BESTBUY_2024Q2_10Q_25.csv",
+            "BESTBUY_2024Q2_10Q_27.csv",
+            "BESTBUY_2024Q2_10Q_29.csv",
+            "BESTBUY_2024Q2_10Q_3.csv",
+            "BESTBUY_2024Q2_10Q_31.csv",
+            "BESTBUY_2024Q2_10Q_33.csv",
+            "BESTBUY_2024Q2_10Q_35.csv",
+            "BESTBUY_2024Q2_10Q_37.csv",
+            "BESTBUY_2024Q2_10Q_39.csv",
+            "BESTBUY_2024Q2_10Q_41.csv",
+            "BESTBUY_2024Q2_10Q_43.csv",
+            "BESTBUY_2024Q2_10Q_45.csv",
+            "BESTBUY_2024Q2_10Q_47.csv",
+            "BESTBUY_2024Q2_10Q_49.csv",
+            "BESTBUY_2024Q2_10Q_5.csv",
+            "BESTBUY_2024Q2_10Q_51.csv",
+            "BESTBUY_2024Q2_10Q_53.csv",
+            "BESTBUY_2024Q2_10Q_55.csv",
+            "BESTBUY_2024Q2_10Q_57.csv",
+            "BESTBUY_2024Q2_10Q_59.csv",
+            "BESTBUY_2024Q2_10Q_61.csv",
+            "BESTBUY_2024Q2_10Q_63.csv",
+            "BESTBUY_2024Q2_10Q_65.csv",
+            "BESTBUY_2024Q2_10Q_67.csv",
+            "BESTBUY_2024Q2_10Q_69.csv",
+            "BESTBUY_2024Q2_10Q_7.csv",
+            "BESTBUY_2024Q2_10Q_71.csv",
+            "BESTBUY_2024Q2_10Q_75.csv",
+            "BESTBUY_2024Q2_10Q_77.csv",
+            "BESTBUY_2024Q2_10Q_79.csv",
+            "BESTBUY_2024Q2_10Q_9.csv"
+        ]
+    }
+}

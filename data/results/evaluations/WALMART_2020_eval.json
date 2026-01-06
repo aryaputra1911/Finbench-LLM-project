@@ -1,0 +1,136 @@
+{
+    "entity": "WALMART",
+    "period": "2020",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 523964.0,
+                "source": "WALMART_2020_10K_71.csv",
+                "ts": "2026-01-06T19:36:13.206106"
+            },
+            "net_income": {
+                "value": 14881.0,
+                "source": "WALMART_2020_10K_85.csv",
+                "ts": "2026-01-06T19:36:13.247054"
+            },
+            "assets": {
+                "value": 236495.0,
+                "source": "WALMART_2020_10K_75.csv",
+                "ts": "2026-01-06T19:36:13.226670"
+            },
+            "liabilities": {
+                "value": 0.0,
+                "source": null
+            }
+        },
+        "inferred": {
+            "net_margin": {
+                "value": 0.0284,
+                "method": "deduced_from_observed",
+                "formula": "net_income / revenue"
+            }
+        },
+        "accounting_proof": {
+            "equity_deduced": 236495.0,
+            "identity_verified": false
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.75,
+        "sanity_score": 0.4,
+        "data_integrity": "FAILED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": false,
+        "reasoning_mode": "investigative",
+        "known_unknowns": [
+            "liabilities"
+        ],
+        "caution_note": "Identity failure detected"
+    },
+    "metadata": {
+        "unit": "units",
+        "currency": "Unknown",
+        "files": [
+            "WALMART_2020_10K_1.csv",
+            "WALMART_2020_10K_101.csv",
+            "WALMART_2020_10K_105.csv",
+            "WALMART_2020_10K_107.csv",
+            "WALMART_2020_10K_109.csv",
+            "WALMART_2020_10K_11.csv",
+            "WALMART_2020_10K_111.csv",
+            "WALMART_2020_10K_113.csv",
+            "WALMART_2020_10K_115.csv",
+            "WALMART_2020_10K_117.csv",
+            "WALMART_2020_10K_119.csv",
+            "WALMART_2020_10K_121.csv",
+            "WALMART_2020_10K_123.csv",
+            "WALMART_2020_10K_125.csv",
+            "WALMART_2020_10K_127.csv",
+            "WALMART_2020_10K_129.csv",
+            "WALMART_2020_10K_131.csv",
+            "WALMART_2020_10K_133.csv",
+            "WALMART_2020_10K_135.csv",
+            "WALMART_2020_10K_137.csv",
+            "WALMART_2020_10K_139.csv",
+            "WALMART_2020_10K_141.csv",
+            "WALMART_2020_10K_143.csv",
+            "WALMART_2020_10K_145.csv",
+            "WALMART_2020_10K_147.csv",
+            "WALMART_2020_10K_15.csv",
+            "WALMART_2020_10K_151.csv",
+            "WALMART_2020_10K_153.csv",
+            "WALMART_2020_10K_155.csv",
+            "WALMART_2020_10K_157.csv",
+            "WALMART_2020_10K_159.csv",
+            "WALMART_2020_10K_169.csv",
+            "WALMART_2020_10K_17.csv",
+            "WALMART_2020_10K_171.csv",
+            "WALMART_2020_10K_173.csv",
+            "WALMART_2020_10K_19.csv",
+            "WALMART_2020_10K_21.csv",
+            "WALMART_2020_10K_23.csv",
+            "WALMART_2020_10K_25.csv",
+            "WALMART_2020_10K_29.csv",
+            "WALMART_2020_10K_31.csv",
+            "WALMART_2020_10K_33.csv",
+            "WALMART_2020_10K_35.csv",
+            "WALMART_2020_10K_37.csv",
+            "WALMART_2020_10K_39.csv",
+            "WALMART_2020_10K_41.csv",
+            "WALMART_2020_10K_43.csv",
+            "WALMART_2020_10K_45.csv",
+            "WALMART_2020_10K_47.csv",
+            "WALMART_2020_10K_49.csv",
+            "WALMART_2020_10K_5.csv",
+            "WALMART_2020_10K_51.csv",
+            "WALMART_2020_10K_53.csv",
+            "WALMART_2020_10K_55.csv",
+            "WALMART_2020_10K_57.csv",
+            "WALMART_2020_10K_59.csv",
+            "WALMART_2020_10K_61.csv",
+            "WALMART_2020_10K_63.csv",
+            "WALMART_2020_10K_65.csv",
+            "WALMART_2020_10K_67.csv",
+            "WALMART_2020_10K_69.csv",
+            "WALMART_2020_10K_7.csv",
+            "WALMART_2020_10K_71.csv",
+            "WALMART_2020_10K_73.csv",
+            "WALMART_2020_10K_75.csv",
+            "WALMART_2020_10K_77.csv",
+            "WALMART_2020_10K_79.csv",
+            "WALMART_2020_10K_81.csv",
+            "WALMART_2020_10K_83.csv",
+            "WALMART_2020_10K_85.csv",
+            "WALMART_2020_10K_87.csv",
+            "WALMART_2020_10K_89.csv",
+            "WALMART_2020_10K_9.csv",
+            "WALMART_2020_10K_91.csv",
+            "WALMART_2020_10K_93.csv",
+            "WALMART_2020_10K_95.csv",
+            "WALMART_2020_10K_97.csv",
+            "WALMART_2020_10K_99.csv"
+        ]
+    }
+}

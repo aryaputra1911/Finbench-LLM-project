@@ -1,0 +1,113 @@
+{
+    "entity": "AMD",
+    "period": "2022",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 0.0,
+                "source": null
+            },
+            "net_income": {
+                "value": 1320.0,
+                "source": "AMD_2022_10K_25.csv",
+                "ts": "2026-01-06T19:36:15.622011"
+            },
+            "assets": {
+                "value": 3581.0,
+                "source": "AMD_2022_10K_69.csv",
+                "ts": "2026-01-06T19:36:15.698443"
+            },
+            "liabilities": {
+                "value": 0.0,
+                "source": null
+            }
+        },
+        "inferred": {},
+        "accounting_proof": {
+            "equity_deduced": 3581.0,
+            "identity_verified": false
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.5,
+        "sanity_score": 0.6,
+        "data_integrity": "FAILED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": false,
+        "reasoning_mode": "investigative",
+        "known_unknowns": [
+            "revenue",
+            "liabilities"
+        ],
+        "caution_note": "Identity failure detected"
+    },
+    "metadata": {
+        "unit": "millions",
+        "currency": "USD",
+        "files": [
+            "AMD_2022_10K_101.csv",
+            "AMD_2022_10K_103.csv",
+            "AMD_2022_10K_105.csv",
+            "AMD_2022_10K_107.csv",
+            "AMD_2022_10K_109.csv",
+            "AMD_2022_10K_11.csv",
+            "AMD_2022_10K_111.csv",
+            "AMD_2022_10K_113.csv",
+            "AMD_2022_10K_115.csv",
+            "AMD_2022_10K_117.csv",
+            "AMD_2022_10K_119.csv",
+            "AMD_2022_10K_123.csv",
+            "AMD_2022_10K_125.csv",
+            "AMD_2022_10K_127.csv",
+            "AMD_2022_10K_13.csv",
+            "AMD_2022_10K_15.csv",
+            "AMD_2022_10K_17.csv",
+            "AMD_2022_10K_19.csv",
+            "AMD_2022_10K_21.csv",
+            "AMD_2022_10K_23.csv",
+            "AMD_2022_10K_25.csv",
+            "AMD_2022_10K_27.csv",
+            "AMD_2022_10K_29.csv",
+            "AMD_2022_10K_3.csv",
+            "AMD_2022_10K_31.csv",
+            "AMD_2022_10K_33.csv",
+            "AMD_2022_10K_35.csv",
+            "AMD_2022_10K_37.csv",
+            "AMD_2022_10K_41.csv",
+            "AMD_2022_10K_43.csv",
+            "AMD_2022_10K_45.csv",
+            "AMD_2022_10K_47.csv",
+            "AMD_2022_10K_49.csv",
+            "AMD_2022_10K_5.csv",
+            "AMD_2022_10K_51.csv",
+            "AMD_2022_10K_53.csv",
+            "AMD_2022_10K_55.csv",
+            "AMD_2022_10K_57.csv",
+            "AMD_2022_10K_59.csv",
+            "AMD_2022_10K_61.csv",
+            "AMD_2022_10K_63.csv",
+            "AMD_2022_10K_65.csv",
+            "AMD_2022_10K_67.csv",
+            "AMD_2022_10K_69.csv",
+            "AMD_2022_10K_7.csv",
+            "AMD_2022_10K_71.csv",
+            "AMD_2022_10K_73.csv",
+            "AMD_2022_10K_75.csv",
+            "AMD_2022_10K_77.csv",
+            "AMD_2022_10K_79.csv",
+            "AMD_2022_10K_81.csv",
+            "AMD_2022_10K_83.csv",
+            "AMD_2022_10K_85.csv",
+            "AMD_2022_10K_87.csv",
+            "AMD_2022_10K_89.csv",
+            "AMD_2022_10K_9.csv",
+            "AMD_2022_10K_91.csv",
+            "AMD_2022_10K_93.csv",
+            "AMD_2022_10K_95.csv",
+            "AMD_2022_10K_97.csv",
+            "AMD_2022_10K_99.csv"
+        ]
+    }
+}

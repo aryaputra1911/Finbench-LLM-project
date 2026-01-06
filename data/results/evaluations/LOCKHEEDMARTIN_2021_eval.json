@@ -1,0 +1,114 @@
+{
+    "entity": "LOCKHEEDMARTIN",
+    "period": "2021",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 16789.0,
+                "source": "LOCKHEEDMARTIN_2021_10K_55.csv",
+                "ts": "2026-01-06T19:36:15.901656"
+            },
+            "net_income": {
+                "value": 6315.0,
+                "source": "LOCKHEEDMARTIN_2021_10K_39.csv",
+                "ts": "2026-01-06T19:36:15.851984"
+            },
+            "assets": {
+                "value": 50873.0,
+                "source": "LOCKHEEDMARTIN_2021_10K_63.csv",
+                "ts": "2026-01-06T19:36:15.918483"
+            },
+            "liabilities": {
+                "value": 39914.0,
+                "source": "LOCKHEEDMARTIN_2021_10K_41.csv",
+                "ts": "2026-01-06T19:36:15.860061"
+            }
+        },
+        "inferred": {
+            "net_margin": {
+                "value": 0.3761,
+                "method": "deduced_from_observed",
+                "formula": "net_income / revenue"
+            }
+        },
+        "accounting_proof": {
+            "equity_deduced": 10959.0,
+            "identity_verified": true
+        }
+    },
+    "epistemic_status": {
+        "completeness": 1.0,
+        "sanity_score": 0.8,
+        "data_integrity": "PASSED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": true,
+        "reasoning_mode": "deductive",
+        "known_unknowns": [],
+        "caution_note": null
+    },
+    "metadata": {
+        "unit": "units",
+        "currency": "Unknown",
+        "files": [
+            "LOCKHEEDMARTIN_2021_10K_101.csv",
+            "LOCKHEEDMARTIN_2021_10K_103.csv",
+            "LOCKHEEDMARTIN_2021_10K_105.csv",
+            "LOCKHEEDMARTIN_2021_10K_107.csv",
+            "LOCKHEEDMARTIN_2021_10K_109.csv",
+            "LOCKHEEDMARTIN_2021_10K_11.csv",
+            "LOCKHEEDMARTIN_2021_10K_111.csv",
+            "LOCKHEEDMARTIN_2021_10K_113.csv",
+            "LOCKHEEDMARTIN_2021_10K_115.csv",
+            "LOCKHEEDMARTIN_2021_10K_117.csv",
+            "LOCKHEEDMARTIN_2021_10K_13.csv",
+            "LOCKHEEDMARTIN_2021_10K_15.csv",
+            "LOCKHEEDMARTIN_2021_10K_17.csv",
+            "LOCKHEEDMARTIN_2021_10K_19.csv",
+            "LOCKHEEDMARTIN_2021_10K_21.csv",
+            "LOCKHEEDMARTIN_2021_10K_23.csv",
+            "LOCKHEEDMARTIN_2021_10K_25.csv",
+            "LOCKHEEDMARTIN_2021_10K_27.csv",
+            "LOCKHEEDMARTIN_2021_10K_29.csv",
+            "LOCKHEEDMARTIN_2021_10K_3.csv",
+            "LOCKHEEDMARTIN_2021_10K_31.csv",
+            "LOCKHEEDMARTIN_2021_10K_33.csv",
+            "LOCKHEEDMARTIN_2021_10K_35.csv",
+            "LOCKHEEDMARTIN_2021_10K_37.csv",
+            "LOCKHEEDMARTIN_2021_10K_39.csv",
+            "LOCKHEEDMARTIN_2021_10K_41.csv",
+            "LOCKHEEDMARTIN_2021_10K_43.csv",
+            "LOCKHEEDMARTIN_2021_10K_45.csv",
+            "LOCKHEEDMARTIN_2021_10K_47.csv",
+            "LOCKHEEDMARTIN_2021_10K_49.csv",
+            "LOCKHEEDMARTIN_2021_10K_5.csv",
+            "LOCKHEEDMARTIN_2021_10K_51.csv",
+            "LOCKHEEDMARTIN_2021_10K_53.csv",
+            "LOCKHEEDMARTIN_2021_10K_55.csv",
+            "LOCKHEEDMARTIN_2021_10K_57.csv",
+            "LOCKHEEDMARTIN_2021_10K_59.csv",
+            "LOCKHEEDMARTIN_2021_10K_61.csv",
+            "LOCKHEEDMARTIN_2021_10K_63.csv",
+            "LOCKHEEDMARTIN_2021_10K_65.csv",
+            "LOCKHEEDMARTIN_2021_10K_67.csv",
+            "LOCKHEEDMARTIN_2021_10K_69.csv",
+            "LOCKHEEDMARTIN_2021_10K_7.csv",
+            "LOCKHEEDMARTIN_2021_10K_71.csv",
+            "LOCKHEEDMARTIN_2021_10K_73.csv",
+            "LOCKHEEDMARTIN_2021_10K_75.csv",
+            "LOCKHEEDMARTIN_2021_10K_77.csv",
+            "LOCKHEEDMARTIN_2021_10K_79.csv",
+            "LOCKHEEDMARTIN_2021_10K_81.csv",
+            "LOCKHEEDMARTIN_2021_10K_83.csv",
+            "LOCKHEEDMARTIN_2021_10K_85.csv",
+            "LOCKHEEDMARTIN_2021_10K_87.csv",
+            "LOCKHEEDMARTIN_2021_10K_89.csv",
+            "LOCKHEEDMARTIN_2021_10K_9.csv",
+            "LOCKHEEDMARTIN_2021_10K_91.csv",
+            "LOCKHEEDMARTIN_2021_10K_93.csv",
+            "LOCKHEEDMARTIN_2021_10K_95.csv",
+            "LOCKHEEDMARTIN_2021_10K_99.csv"
+        ]
+    }
+}

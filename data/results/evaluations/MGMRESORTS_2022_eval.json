@@ -1,0 +1,133 @@
+{
+    "entity": "MGMRESORTS",
+    "period": "2022",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 0.0,
+                "source": null
+            },
+            "net_income": {
+                "value": 1487247.0,
+                "source": "MGMRESORTS_2022_10K_79.csv",
+                "ts": "2026-01-06T19:36:14.808272"
+            },
+            "assets": {
+                "value": 0.0,
+                "source": null
+            },
+            "liabilities": {
+                "value": 0.0,
+                "source": null
+            }
+        },
+        "inferred": {},
+        "accounting_proof": {
+            "equity_deduced": 0.0,
+            "identity_verified": false
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.25,
+        "sanity_score": 1.0,
+        "data_integrity": "PASSED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": false,
+        "reasoning_mode": "investigative",
+        "known_unknowns": [
+            "revenue",
+            "assets",
+            "liabilities"
+        ],
+        "caution_note": null
+    },
+    "metadata": {
+        "unit": "thousands",
+        "currency": "USD",
+        "files": [
+            "MGMRESORTS_2022_10K_101.csv",
+            "MGMRESORTS_2022_10K_103.csv",
+            "MGMRESORTS_2022_10K_105.csv",
+            "MGMRESORTS_2022_10K_107.csv",
+            "MGMRESORTS_2022_10K_109.csv",
+            "MGMRESORTS_2022_10K_11.csv",
+            "MGMRESORTS_2022_10K_111.csv",
+            "MGMRESORTS_2022_10K_113.csv",
+            "MGMRESORTS_2022_10K_117.csv",
+            "MGMRESORTS_2022_10K_119.csv",
+            "MGMRESORTS_2022_10K_121.csv",
+            "MGMRESORTS_2022_10K_123.csv",
+            "MGMRESORTS_2022_10K_125.csv",
+            "MGMRESORTS_2022_10K_127.csv",
+            "MGMRESORTS_2022_10K_129.csv",
+            "MGMRESORTS_2022_10K_13.csv",
+            "MGMRESORTS_2022_10K_131.csv",
+            "MGMRESORTS_2022_10K_133.csv",
+            "MGMRESORTS_2022_10K_135.csv",
+            "MGMRESORTS_2022_10K_137.csv",
+            "MGMRESORTS_2022_10K_139.csv",
+            "MGMRESORTS_2022_10K_143.csv",
+            "MGMRESORTS_2022_10K_145.csv",
+            "MGMRESORTS_2022_10K_147.csv",
+            "MGMRESORTS_2022_10K_149.csv",
+            "MGMRESORTS_2022_10K_15.csv",
+            "MGMRESORTS_2022_10K_151.csv",
+            "MGMRESORTS_2022_10K_153.csv",
+            "MGMRESORTS_2022_10K_155.csv",
+            "MGMRESORTS_2022_10K_157.csv",
+            "MGMRESORTS_2022_10K_159.csv",
+            "MGMRESORTS_2022_10K_161.csv",
+            "MGMRESORTS_2022_10K_163.csv",
+            "MGMRESORTS_2022_10K_17.csv",
+            "MGMRESORTS_2022_10K_175.csv",
+            "MGMRESORTS_2022_10K_187.csv",
+            "MGMRESORTS_2022_10K_189.csv",
+            "MGMRESORTS_2022_10K_19.csv",
+            "MGMRESORTS_2022_10K_191.csv",
+            "MGMRESORTS_2022_10K_21.csv",
+            "MGMRESORTS_2022_10K_23.csv",
+            "MGMRESORTS_2022_10K_25.csv",
+            "MGMRESORTS_2022_10K_27.csv",
+            "MGMRESORTS_2022_10K_29.csv",
+            "MGMRESORTS_2022_10K_3.csv",
+            "MGMRESORTS_2022_10K_31.csv",
+            "MGMRESORTS_2022_10K_33.csv",
+            "MGMRESORTS_2022_10K_35.csv",
+            "MGMRESORTS_2022_10K_37.csv",
+            "MGMRESORTS_2022_10K_39.csv",
+            "MGMRESORTS_2022_10K_41.csv",
+            "MGMRESORTS_2022_10K_43.csv",
+            "MGMRESORTS_2022_10K_45.csv",
+            "MGMRESORTS_2022_10K_47.csv",
+            "MGMRESORTS_2022_10K_49.csv",
+            "MGMRESORTS_2022_10K_5.csv",
+            "MGMRESORTS_2022_10K_51.csv",
+            "MGMRESORTS_2022_10K_55.csv",
+            "MGMRESORTS_2022_10K_57.csv",
+            "MGMRESORTS_2022_10K_59.csv",
+            "MGMRESORTS_2022_10K_61.csv",
+            "MGMRESORTS_2022_10K_63.csv",
+            "MGMRESORTS_2022_10K_65.csv",
+            "MGMRESORTS_2022_10K_67.csv",
+            "MGMRESORTS_2022_10K_69.csv",
+            "MGMRESORTS_2022_10K_7.csv",
+            "MGMRESORTS_2022_10K_71.csv",
+            "MGMRESORTS_2022_10K_73.csv",
+            "MGMRESORTS_2022_10K_75.csv",
+            "MGMRESORTS_2022_10K_79.csv",
+            "MGMRESORTS_2022_10K_81.csv",
+            "MGMRESORTS_2022_10K_83.csv",
+            "MGMRESORTS_2022_10K_85.csv",
+            "MGMRESORTS_2022_10K_87.csv",
+            "MGMRESORTS_2022_10K_89.csv",
+            "MGMRESORTS_2022_10K_9.csv",
+            "MGMRESORTS_2022_10K_91.csv",
+            "MGMRESORTS_2022_10K_93.csv",
+            "MGMRESORTS_2022_10K_95.csv",
+            "MGMRESORTS_2022_10K_97.csv",
+            "MGMRESORTS_2022_10K_99.csv"
+        ]
+    }
+}

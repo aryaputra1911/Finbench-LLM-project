@@ -1,0 +1,117 @@
+{
+    "entity": "AMAZON",
+    "period": "2017",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 177656.0,
+                "source": "AMAZON_2017_10K_35.csv",
+                "ts": "2026-01-06T19:36:11.189590"
+            },
+            "net_income": {
+                "value": 3033.0,
+                "source": "AMAZON_2017_10K_45.csv",
+                "ts": "2026-01-06T19:36:11.222410"
+            },
+            "assets": {
+                "value": 131310.0,
+                "source": "AMAZON_2017_10K_47.csv",
+                "ts": "2026-01-06T19:36:11.222410"
+            },
+            "liabilities": {
+                "value": 0.0,
+                "source": null
+            }
+        },
+        "inferred": {
+            "net_margin": {
+                "value": 0.0171,
+                "method": "deduced_from_observed",
+                "formula": "net_income / revenue"
+            }
+        },
+        "accounting_proof": {
+            "equity_deduced": 131310.0,
+            "identity_verified": false
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.75,
+        "sanity_score": 0.6,
+        "data_integrity": "FAILED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": true,
+        "reasoning_mode": "investigative",
+        "known_unknowns": [
+            "liabilities"
+        ],
+        "caution_note": "Identity failure detected"
+    },
+    "metadata": {
+        "unit": "units",
+        "currency": "USD",
+        "files": [
+            "AMAZON_2017_10K_101.csv",
+            "AMAZON_2017_10K_103.csv",
+            "AMAZON_2017_10K_105.csv",
+            "AMAZON_2017_10K_107.csv",
+            "AMAZON_2017_10K_109.csv",
+            "AMAZON_2017_10K_111.csv",
+            "AMAZON_2017_10K_113.csv",
+            "AMAZON_2017_10K_115.csv",
+            "AMAZON_2017_10K_117.csv",
+            "AMAZON_2017_10K_119.csv",
+            "AMAZON_2017_10K_125.csv",
+            "AMAZON_2017_10K_127.csv",
+            "AMAZON_2017_10K_13.csv",
+            "AMAZON_2017_10K_15.csv",
+            "AMAZON_2017_10K_17.csv",
+            "AMAZON_2017_10K_19.csv",
+            "AMAZON_2017_10K_21.csv",
+            "AMAZON_2017_10K_23.csv",
+            "AMAZON_2017_10K_25.csv",
+            "AMAZON_2017_10K_27.csv",
+            "AMAZON_2017_10K_29.csv",
+            "AMAZON_2017_10K_31.csv",
+            "AMAZON_2017_10K_33.csv",
+            "AMAZON_2017_10K_35.csv",
+            "AMAZON_2017_10K_37.csv",
+            "AMAZON_2017_10K_39.csv",
+            "AMAZON_2017_10K_41.csv",
+            "AMAZON_2017_10K_43.csv",
+            "AMAZON_2017_10K_45.csv",
+            "AMAZON_2017_10K_47.csv",
+            "AMAZON_2017_10K_49.csv",
+            "AMAZON_2017_10K_5.csv",
+            "AMAZON_2017_10K_51.csv",
+            "AMAZON_2017_10K_53.csv",
+            "AMAZON_2017_10K_55.csv",
+            "AMAZON_2017_10K_57.csv",
+            "AMAZON_2017_10K_59.csv",
+            "AMAZON_2017_10K_61.csv",
+            "AMAZON_2017_10K_63.csv",
+            "AMAZON_2017_10K_65.csv",
+            "AMAZON_2017_10K_67.csv",
+            "AMAZON_2017_10K_69.csv",
+            "AMAZON_2017_10K_7.csv",
+            "AMAZON_2017_10K_71.csv",
+            "AMAZON_2017_10K_73.csv",
+            "AMAZON_2017_10K_75.csv",
+            "AMAZON_2017_10K_77.csv",
+            "AMAZON_2017_10K_79.csv",
+            "AMAZON_2017_10K_81.csv",
+            "AMAZON_2017_10K_83.csv",
+            "AMAZON_2017_10K_85.csv",
+            "AMAZON_2017_10K_87.csv",
+            "AMAZON_2017_10K_89.csv",
+            "AMAZON_2017_10K_9.csv",
+            "AMAZON_2017_10K_91.csv",
+            "AMAZON_2017_10K_93.csv",
+            "AMAZON_2017_10K_95.csv",
+            "AMAZON_2017_10K_97.csv",
+            "AMAZON_2017_10K_99.csv"
+        ]
+    }
+}

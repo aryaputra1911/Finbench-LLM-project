@@ -1,0 +1,101 @@
+{
+    "entity": "NETFLIX",
+    "period": "2017",
+    "knowledge_base": {
+        "observed": {
+            "revenue": {
+                "value": 0.0,
+                "source": null
+            },
+            "net_income": {
+                "value": 558929.0,
+                "source": "NETFLIX_2017_10K_7.csv",
+                "ts": "2026-01-06T19:36:08.655629"
+            },
+            "assets": {
+                "value": 19012742.0,
+                "source": "NETFLIX_2017_10K_45.csv",
+                "ts": "2026-01-06T19:36:08.615126"
+            },
+            "liabilities": {
+                "value": 15430786.0,
+                "source": "NETFLIX_2017_10K_45.csv",
+                "ts": "2026-01-06T19:36:08.617134"
+            }
+        },
+        "inferred": {},
+        "accounting_proof": {
+            "equity_deduced": 3581956.0,
+            "identity_verified": true
+        }
+    },
+    "epistemic_status": {
+        "completeness": 0.75,
+        "sanity_score": 0.8,
+        "data_integrity": "PASSED"
+    },
+    "anomalies": [],
+    "llm_semantic_contract": {
+        "safe_to_reason": true,
+        "reasoning_mode": "deductive",
+        "known_unknowns": [
+            "revenue"
+        ],
+        "caution_note": null
+    },
+    "metadata": {
+        "unit": "units",
+        "currency": "Unknown",
+        "files": [
+            "NETFLIX_2017_10K_101.csv",
+            "NETFLIX_2017_10K_103.csv",
+            "NETFLIX_2017_10K_109.csv",
+            "NETFLIX_2017_10K_11.csv",
+            "NETFLIX_2017_10K_13.csv",
+            "NETFLIX_2017_10K_15.csv",
+            "NETFLIX_2017_10K_17.csv",
+            "NETFLIX_2017_10K_19.csv",
+            "NETFLIX_2017_10K_21.csv",
+            "NETFLIX_2017_10K_23.csv",
+            "NETFLIX_2017_10K_25.csv",
+            "NETFLIX_2017_10K_27.csv",
+            "NETFLIX_2017_10K_29.csv",
+            "NETFLIX_2017_10K_3.csv",
+            "NETFLIX_2017_10K_31.csv",
+            "NETFLIX_2017_10K_33.csv",
+            "NETFLIX_2017_10K_37.csv",
+            "NETFLIX_2017_10K_39.csv",
+            "NETFLIX_2017_10K_41.csv",
+            "NETFLIX_2017_10K_45.csv",
+            "NETFLIX_2017_10K_47.csv",
+            "NETFLIX_2017_10K_49.csv",
+            "NETFLIX_2017_10K_5.csv",
+            "NETFLIX_2017_10K_51.csv",
+            "NETFLIX_2017_10K_53.csv",
+            "NETFLIX_2017_10K_55.csv",
+            "NETFLIX_2017_10K_57.csv",
+            "NETFLIX_2017_10K_59.csv",
+            "NETFLIX_2017_10K_61.csv",
+            "NETFLIX_2017_10K_63.csv",
+            "NETFLIX_2017_10K_65.csv",
+            "NETFLIX_2017_10K_67.csv",
+            "NETFLIX_2017_10K_69.csv",
+            "NETFLIX_2017_10K_7.csv",
+            "NETFLIX_2017_10K_71.csv",
+            "NETFLIX_2017_10K_73.csv",
+            "NETFLIX_2017_10K_75.csv",
+            "NETFLIX_2017_10K_77.csv",
+            "NETFLIX_2017_10K_79.csv",
+            "NETFLIX_2017_10K_81.csv",
+            "NETFLIX_2017_10K_83.csv",
+            "NETFLIX_2017_10K_85.csv",
+            "NETFLIX_2017_10K_87.csv",
+            "NETFLIX_2017_10K_89.csv",
+            "NETFLIX_2017_10K_9.csv",
+            "NETFLIX_2017_10K_91.csv",
+            "NETFLIX_2017_10K_93.csv",
+            "NETFLIX_2017_10K_95.csv",
+            "NETFLIX_2017_10K_97.csv"
+        ]
+    }
+}
