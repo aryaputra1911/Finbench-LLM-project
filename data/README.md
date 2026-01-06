@@ -30,8 +30,8 @@ To facilitate efficient batch processing and token management for Large Language
 }
 ```
 ## Dataset Citation
-```
 This project utilizes the FinanceBench dataset for benchmarking financial Question Answering capabilities:
+```
 @misc{islam2023financebench,
       title={FinanceBench: A New Benchmark for Financial Question Answering}, 
       author={Pranab Islam and Anand Kannappan and Douwe Kiela and Rebecca Qian and Nino Scherrer and Bertie Vidgen},
