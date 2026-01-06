@@ -12,7 +12,7 @@ The data pipeline follows a strict hierarchy from ingestion to evaluation:
 | :--- | :--- | :--- |
 | `raw/` | Original financial statements (10-K, 10-Q) in PDF format. | Excluded |
 | `processed/` | Sanitized text and canonical CSVs for fundamental audit. | Excluded |
-| `database/` | Local Vector Store (ChromaDB) for RAG operations. | Excluded |
+| `database/` | Local Vector Store for RAG operations. | Excluded |
 | `results/` | Model evaluation outputs and Epistemic JSON reports. | Included |
 
 
