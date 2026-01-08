@@ -52,8 +52,9 @@ def process_all_markdowns(input_root, output_dir):
             print(f"Gagal memproses {md_file.name}: {e}")
 
 if __name__ == "__main__":
-    input_folder = r"\data\processed\markdown"
-    output_folder = r"\data\processed\decomposed"
+    input_folder = r"data\processed\markdown"
+    output_folder = r"data\processed\decomposed"
     
 
     process_all_markdowns(input_folder, output_folder)
+
