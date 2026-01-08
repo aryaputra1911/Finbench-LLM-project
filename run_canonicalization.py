@@ -2,8 +2,8 @@ import os
 from src.canonicalizer import FinancialCanonicalizer
 
 def main():
-    input_dir = r"C:\Users\ARYA\My Learning\Finbench-LLM\data\processed\decomposed"
-    output_dir = r"C:\Users\ARYA\My Learning\Finbench-LLM\data\processed\canonical"
+    input_dir = r"data\processed\decomposed"
+    output_dir = r"data\processed\canonical"
     
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -22,4 +22,5 @@ def main():
     print(f"\ntotal tables has been extracted {total_tables} ")
 
 if __name__ == "__main__":
+
     main()
