@@ -43,17 +43,22 @@ class FinbenchSystem:
                     for k in keys:
                         if k in df.index: 
                             val = df.loc[k].iloc[0]
-                            return float(val) if val is not None else None
-                return None
+                            # CEK: Jika val adalah None atau NaN, kembalikan 0.0
+                            if val is None or str(val) == 'nan':
+                                return 0.0
+                            return float(val)
+                return 0.0 # Selalu kembalikan float 0.0 jika tidak ditemukan
 
             return {
                 "revenue": extract(is_stmt, ['Total Revenue', 'TotalRevenue']),
                 "net_income": extract(is_stmt, ['Net Income', 'NetIncome']),
-                "assets": extract(bs, ['Total Assets', 'TotalAssets']),
-                "liabilities": extract(bs, ['Total Liabilities Net Minority Interest', 'TotalDebt', 'Total Liabilities'])
+                "total_assets": extract(bs, ['Total Assets', 'TotalAssets']),
+                "ppe_net": extract(bs, ['Net PPE', 'Property Plant Equipment Net']),
+                "inventory": extract(bs, ['Inventory']),
+                "total_liabilities": extract(bs, ['Total Liabilities Net Minority Interest', 'TotalLiabilities'])
             }
         except Exception as e:
-            print(f"[!] Acquisition Error {ticker}: {e}")
+            print(f"[!] Acquisition Error: {e}")
             return {}
 
     def _identify_business_archetype(self, ticker, fundamentals):
@@ -68,31 +73,72 @@ class FinbenchSystem:
         return "STANDARD_MANUFACTURING"
 
     def _calculate_sovereign_metrics(self, fundamentals, archetype):
-        rev = fundamentals.get("revenue")
-        assets = fundamentals.get("assets")
-        ni = fundamentals.get("net_income")
+        rev = fundamentals.get("revenue", 0)
+        assets = fundamentals.get("assets", 0)
+        ni = fundamentals.get("net_income", 0)
         
         metrics = {}
-        if rev and assets and rev > 0:
+        if rev > 0 and assets > 0:
             metrics["asset_turnover"] = round(rev / assets, 2)
             metrics["capital_intensity_ratio"] = round(assets / rev, 2)
+            metrics["net_profit_margin"] = round((ni / rev) * 100, 2)
             
-            if archetype == "IP_DRIVEN_PREMIUM_INDUSTRIAL" and metrics["asset_turnover"] < 0.7:
-                metrics["efficiency_status"] = "ARCHETYPE_CONSISTENT (High Margin Offset)"
-            else:
-                metrics["efficiency_status"] = "STANDARD"
-                
-        if ni and assets and assets > 0:
+            # DuPont Identity Check
             metrics["return_on_assets"] = round((ni / assets) * 100, 2)
-            
+            # Menghitung kontribusi margin vs turnover terhadap ROA
+            metrics["margin_contribution_to_roa"] = round(metrics["net_profit_margin"] * metrics["asset_turnover"], 2)
+        
         return metrics
 
-    def _get_sector_benchmarks(self, ticker):
+    def _audit_denominator_integrity(self, fundamentals):
+        rev = fundamentals.get("revenue", 0)
+        ppe = fundamentals.get("ppe", 0)
+        assets = fundamentals.get("assets", 0)
+        rnd = fundamentals.get("rnd", 0)
+        
+        # R&D to Revenue
+        rnd_intensity = rnd / rev if rev > 0 else 0
+        
         return {
-            "source": "INTERNAL_ESTIMATE_2024",
-            "industrial_median_cap_intensity": 1.5,
-            "manufacturing_median_turnover": 0.8,
-            "status": "QUALIFIED_BENCHMARK"
+            "ppe_to_revenue": round(ppe / rev if rev > 0 else 0, 3),
+            "rnd_to_revenue": round(rnd_intensity, 3),
+            "asset_structure": "EXTERNALIZED" if (ppe / rev if rev > 0 else 0) < 0.15 else "INTEGRATED",
+            "intangible_suppression_risk": rnd_intensity > 0.15 and (ppe / assets if assets > 0 else 0) < 0.2
+        }
+
+    def _get_sector_benchmarks(self, ticker):
+        sector_data = {"median_roa": 10.0, "median_turnover": 0.7, "status": "FALLBACK"}
+        
+        if self.researcher:
+            try:
+                # search ROA avg
+                t = yf.Ticker(ticker)
+                sector = t.info.get('sector', 'Technology')
+                query = f"average ROA and asset turnover for {sector} sector 2025"
+                search = self.researcher.search(query=query, max_results=1)
+                sector_data["search_context"] = search['results'][0]['content'] if search['results'] else ""
+                sector_data["sector_name"] = sector
+                sector_data["status"] = "LIVE_SEARCH_DATA"
+            except: pass
+            
+        return sector_data
+    
+    def _calculate_normalization_stress_test(self, mechanical_audit, benchmarks):
+        reported_roa = mechanical_audit.get("roa", 0)
+        current_intensity = mechanical_audit.get("capital_intensity", 0)
+        median_ci = benchmarks.get("median_capital_intensity", 1.5) 
+        
+        if current_intensity >= median_ci:
+            return {"status": "ALREADY_CAPITAL_INTENSE", "normalized_roa": reported_roa}
+
+        normalized_roa = round(reported_roa * (current_intensity / median_ci), 2)        
+        collapse_magnitude = round(((reported_roa - normalized_roa) / reported_roa) * 100, 2) if reported_roa > 0 else 0
+
+        return {
+            "normalized_roa": normalized_roa,
+            "industry_target_ci": median_ci,
+            "potential_roa_collapse_pct": collapse_magnitude,
+            "integrity_risk": "HIGH" if collapse_magnitude > 40 else "STABLE"
         }
 
     def run(self, ticker, query=""):
@@ -108,6 +154,7 @@ class FinbenchSystem:
         archetype = self._identify_business_archetype(ticker, raw_fund)
         metrics = self._calculate_sovereign_metrics(raw_fund, archetype)
         benchmarks = self._get_sector_benchmarks(ticker)
+        denom_audit = self._audit_denominator_integrity(raw_fund)
 
         # Governance & Decision Perimeter
         governance = {
@@ -127,7 +174,7 @@ class FinbenchSystem:
         if self.researcher:
             try:
                 search = self.researcher.search(query=f"{ticker} structural moat audit", max_results=2)
-                narratives = [{"content": r['content'], "reliability": self.evidence_weights["PEER_CONTEXT"]} for r in search['results']]
+                narratives = [{"content": r['content'], "url": r.get('url'), "reliability": self.evidence_weights["PEER_CONTEXT"]} for r in search['results']]
             except: pass
 
         return {
@@ -139,6 +186,7 @@ class FinbenchSystem:
             },
             "archetype_context": archetype,
             "sovereign_metrics": metrics,
+            "denominator_audit": denom_audit,
             "benchmarks": benchmarks,
             "governance": governance,
             "context_noise": narratives
